@@ -9,11 +9,11 @@ function clr() {
 function perc() {
   document.getElementById("result").value = result / 100;
 }
-/*
-function power()
-{
-    document.getElementById("result").value=result*result
+
+function power() {
+  document.getElementById("result").value = result * result;
 }
+/*
 function solve() 
          { 
              let x = document.getElementById("result").value 
