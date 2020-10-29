@@ -17,6 +17,7 @@ input{
     border-radius: 15px;
     margin-bottom: 20px;
     margin-top: 8rem;
+
 }
 input:focus{
     outline: none;
@@ -29,3 +30,4 @@ input:focus{
     align-items: center;
     justify-content: center;
 }
+
