@@ -23,7 +23,6 @@ input{
     border-radius: 15px;
     margin-bottom: 20px;
     margin-top: 8rem;
-    animation: silde_to_top 1000ms ease-in-out;
 }
 input:focus{
     outline: none;
@@ -45,6 +44,7 @@ button:hover{
     justify-content: center;
 }
 
+
 @keyframes silde_to_top {
     0% {
       transform: translateY(0);
@@ -54,3 +54,4 @@ button:hover{
         opacity: 1;
     }
   }
+
