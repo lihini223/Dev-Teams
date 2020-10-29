@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="clock">
+        <h2>Clock UI Design</h2>
+        <div id="time">
+            <div><span id="hour">00</span><span>Hours</span></div>
+            <div><span id="min">00</span><span>Minutes</span></div>
+            <div><span id="sec">00</span><span>Seconds</span></div>
+        </div>
+    </div> 
+
+
+    <script type="text/javascript">
+    function clock (){
+    var hour = document.getElementById('hour');
+    var min = document.getElementById('min');
+    var sec = document.getElementById('sec');
+
+    var h = new Date ().getHours(); 
+    var m = new Date ().getMinutes();
+    var s = new Date ().getSeconds();
+
+    hour.innerHTML = h;
+    min.innerHTML = m;
+    sec.innerHTML = s;
+
+    
+ }
+ var interval = setInterval (clock,1000);
+
+    </script>  
+</html>
