@@ -4,54 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
 </head>
 <body>
+
     <div class="container">
 
-        <div class="inputBox"><input type="text"></div>
+        <div class="inputBox"><input type="text" id="result" ></div>
 
         <div class="Buttons">
 
             <div class="row">
-                <button>%</button>
-                <button>CE</button>
-                <button>C</button>
-                <button><-</button>
+                <!-- <button>%</button>
+                <button>CE</button> -->
+                <input type="button" value="%" onclick="perc()"/>
+                <input type="button" value="CE" onclick="clr()"/>
+                <input type="button" value="C" onclick="clr()"/>
+               <!-- <button>C</button>
+                <button><-</button>  -->
             </div>
 
             <div class="row">
-                <button>1/x</button>
+               <!-- <button>1/x</button>
                 <button>x^2</button>
                 <button>1/x</button>
-                <button>X</button>
+                <button>X</button> -->
+                <input type="button" value="x^2" onclick="power()"/>
+
             </div>
 
             <div class="row">
-                <button>7</button>
+                <input type="button" value="7" onclick="dis('7')"/>
+                <input type="button" value="8" onclick="dis('8')"/>
+                <input type="button" value="9" onclick="dis('9')"/>
+         <!--   <button>7</button>
                 <button>8</button>
-                <button>9</button>
-                <button>X</button>
+                <button>9</button> 
+                <button>X</button> -->
+                <input type="button" value="X" onclick="dis('*x')"/>
             </div>
 
             <div class="row">
-                <button>4</button>
+                <input type="button" value="4" onclick="dis('4')"/>
+                <input type="button" value="5" onclick="dis('5')"/>
+                <input type="button" value="6" onclick="dis('6')"/>
+           <!-- <button>4</button>
                 <button>5</button>
-                <button>6</button>
-                <button>-</button>
+                <button>6</button> 
+                <button>-</button> --> 
+                <input type="button" value="-" onclick="dis('-')"/>
             </div>
 
             <div class="row">
-                <button>1</button>
+           
+                <input type="button" value="1" onclick="dis('1')"/>
+                <input type="button" value="2" onclick="dis('2')"/>
+                <input type="button" value="3" onclick="dis('3')"/>
+           <!-- <button>1</button>
                 <button>2</button>
-                <button>3</button>
-                <button>+</button>
+                <button>3</button> 
+                <button>+</button> -->
+                <input type="button" value="+" onclick="dis('+')"/>
             </div>
+            
 
             <div class="row">
-                <button>+/-</button>
-                <button>0</button>
+               <!-- <button>+/-</button>
+                 <button>0</button>
                 <button>.</button>
-                <button>=</button>
+                <button>=</button> -->
+                <input type="button" value="0" onclick="dis('0')"/>
+                <input type="button" value="." onclick="dis('.')"/>
+                <input type="button" value="=" onclick="solve()"/>
+                <input type="button" value="+/-" onclick="dis('+/-')"/>
+
+                
             </div>
 
         </div>
