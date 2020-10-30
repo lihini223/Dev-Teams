@@ -16,6 +16,13 @@ function back(){
     document.form.textview.value=exp.substring(0,exp.length-1);
 }
     
+function power(){
+    document.form.textview.value=document.form.textview.value*document.form.textview.value;
+}
+function percentage(){
+    document.form.textview.value=document.form.textview.value/100;
+}   
+    
     
 //senehe
 function dis(val) {
