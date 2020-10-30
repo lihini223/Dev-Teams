@@ -22,7 +22,16 @@ function power(){
 function percentage(){
     document.form.textview.value=document.form.textview.value/100;
 }   
-    
+
+function PositiveOrNegative(){
+    document.form.textview.value=document.form.textview.value*-1;
+}
+function sqrt(){
+    document.form.textview.value=(Math.sqrt(document.form.textview.value));
+}
+function x(){
+    document.form.textview.value=1/document.form.textview.value;
+}
     
 //senehe
 function dis(val) {
