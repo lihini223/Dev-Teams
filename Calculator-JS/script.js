@@ -33,14 +33,7 @@ function x(){
     document.form.textview.value=1/document.form.textview.value;
 }
     
-//senehe
-function dis(val) {
-  document.getElementById("result").value += val;
-}
 
-function clr() {
-  document.getElementById("result").value = "";
-}
 
 function perc() {
   document.getElementById("result").value = result / 100;
